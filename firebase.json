@@ -1,0 +1,28 @@
+{
+  "hosting": {
+    "public": "dist/certgen",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/certgen",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/cert",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/certificate",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/form",
+        "destination": "/form.html"
+      }
+    ]
+  }
+}

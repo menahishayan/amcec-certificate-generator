@@ -1,0 +1,86 @@
+.form-container {
+	width: 50%;
+	position:absolute;
+	top:20%;
+	left:45%;
+}
+
+@font-face {
+  font-family: GeorgiaBI;
+  src: url(../assets/georgia_bi.ttf);
+}
+
+#certCanvas {
+	font-family: GeorgiaBI;
+}
+
+.btn.btn-primary {
+	color: white;
+}
+
+.btn.btn-primary:hover {
+	background-color: grey;
+}
+
+.btn.btn-primary:focus {
+	background-color: #00194c;
+	outline: none;
+}
+
+.btn-toolbar {
+	width: 90%;
+    background-color: rgba(176, 196, 222, 0.262);
+    border-radius: 8px;
+    padding: 8px;
+}
+.btn-group {
+	display: inline;
+	margin-right: 2%;
+	margin-bottom: 2%;
+}
+.radioContainer {
+	display: inline;
+}
+
+.input-short {
+	width: 45%;
+	display: inline-block;
+}
+
+/* Loader Start */
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #041432; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  position: fixed;
+  top:48%;
+  right:48%;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* Loader End */
+
+@media only screen and (max-width: 768px) {
+	.form-container {
+    	width: 95%;
+    	position: inherit;
+    }
+	.btn-group {
+		display: inline-block;
+		margin-right: 0%;
+		margin-bottom: 5%;
+	}
+	.radioContainer {
+		display: block;
+	}
+	.input-short {
+		width: 100%;
+		display: block;
+	}
+}
